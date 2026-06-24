@@ -14,7 +14,7 @@
 /.zed
 /auth.json
 /node_modules
-/public/build
+# /public/build  ← متعمد: بنرفعه للريبو عشان الديبلوي بالجيت على استضافة من غير Node
 /public/fonts-manifest.dev.json
 /public/hot
 /public/storage
