@@ -115,8 +115,13 @@ export function MapBlock() {
     <section className="sec-tight bg-cream">
       <div className="container">
         <div className="map-wrap" data-reveal>
-          <div className="pin"><Icon name="pinFill" /></div>
-          <div className="lbl">{CONTACT.address}</div>
+          <iframe
+            src="https://maps.google.com/maps?q=21.5512369,39.1774119&z=16&hl=ar&output=embed"
+            title={CONTACT.address || 'موقعنا على الخريطة'}
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            allowFullScreen
+          />
         </div>
       </div>
     </section>

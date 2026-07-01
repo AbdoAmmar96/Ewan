@@ -7,7 +7,7 @@ export const CONTACT = {
   phoneDisp: '+20 100 123 4567',
   phoneTel: '+201001234567',
   whatsapp: '201001234567',
-  email: 'info@aywan-elevators.com',
+  email: 'info@ewanelevetor.com',
   address: 'القاهرة الجديدة — القاهرة، مصر',
   hours: 'السبت — الخميس · 9 ص — 6 م',
   social: { facebook: '#', instagram: '#', linkedin: '#' },
@@ -16,6 +16,7 @@ export const CONTACT = {
 export const NAV = [
   { href: '/', label: 'الرئيسية' },
   { href: '/services', label: 'خدماتنا' },
+  { href: '/packages', label: 'باقات الصيانة' },
   { href: '/projects', label: 'أعمالنا' },
   { href: '/about', label: 'من نحن' },
   { href: '/contact', label: 'تواصل معنا' },

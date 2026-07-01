@@ -12,6 +12,7 @@ use Inertia\Inertia;
 /* ---------------- Public site ---------------- */
 Route::get('/', fn () => Inertia::render('Home'))->name('home');
 Route::get('/services', fn () => Inertia::render('Services'))->name('services');
+Route::get('/packages', fn () => Inertia::render('Packages'))->name('packages');
 Route::get('/projects', fn () => Inertia::render('Projects'))->name('projects');
 Route::get('/about', fn () => Inertia::render('About'))->name('about');
 Route::get('/contact', fn () => Inertia::render('Contact'))->name('contact');

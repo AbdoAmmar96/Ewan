@@ -34,7 +34,7 @@ export default function Header() {
             </nav>
             <div className="header-cta">
               <a href={`https://wa.me/${CONTACT.whatsapp}`} target="_blank" rel="noopener noreferrer" className="phone" aria-label="تواصل معنا عبر واتساب"><Icon name="wa" /><span className="lat">{CONTACT.phoneDisp}</span></a>
-              <a href="/ewan-profile.pdf" target="_blank" rel="noopener noreferrer" className="btn btn-gold">عرض الملف التعريفي <Icon name="eye" /></a>
+              <a href="/ewan-profile.pdf" target="_blank" rel="noopener noreferrer" className="btn btn-gold">عرض الكتالوج <Icon name="eye" /></a>
               <button className="burger" aria-label="القائمة" onClick={() => setOpen((v) => !v)}>
                 <span /><span /><span />
               </button>
@@ -57,7 +57,7 @@ export default function Header() {
         </nav>
         <div className="drawer-foot">
           <a href={`tel:${CONTACT.phoneTel}`} className="ph">{CONTACT.phoneDisp}</a>
-          <a href="/ewan-profile.pdf" target="_blank" rel="noopener noreferrer" className="btn btn-gold" onClick={() => setOpen(false)}>عرض الملف التعريفي <Icon name="eye" /></a>
+          <a href="/ewan-profile.pdf" target="_blank" rel="noopener noreferrer" className="btn btn-gold" onClick={() => setOpen(false)}>عرض الكتالوج <Icon name="eye" /></a>
         </div>
       </div>
     </>

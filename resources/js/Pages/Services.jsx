@@ -2,7 +2,7 @@ import SiteLayout from '../Layouts/SiteLayout';
 import { SecHead, CtaBand } from '../Components/Bits';
 import ServiceCards from '../Components/ServiceCards';
 import { Process, WhyGrid } from '../Components/Process';
-import { PageHero, Packages } from '../Components/Pieces';
+import { PageHero } from '../Components/Pieces';
 
 export default function Services() {
   return (
@@ -16,13 +16,6 @@ export default function Services() {
         <div className="container">
           <SecHead eyebrow="ما نقدّمه" title="6 خدمات تغطّي كل احتياجاتك" sub="اختر الخدمة التي تناسب مشروعك، وفريقنا يكمّل الباقي." />
           <ServiceCards />
-        </div>
-      </section>
-
-      <section className="sec bg-ink">
-        <div className="container">
-          <SecHead eyebrow="عقود الصيانة" title="باقات صيانة تناسب كل مبنى" sub="صيانة تطيل عمر مصعدك وتقلّل الأعطال — اختر ما يناسبك." center />
-          <Packages />
         </div>
       </section>
 

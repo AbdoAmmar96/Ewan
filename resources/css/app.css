@@ -187,6 +187,7 @@ body:not(.js) #doors{display:none}
 .header-cta{display:flex;align-items:center;gap:10px;flex-shrink:0}
 .header-cta .phone{display:inline-flex;align-items:center;gap:8px;white-space:nowrap;font-family:var(--font-disp);font-weight:600;color:var(--ink);font-size:.95rem;padding:9px 15px;border-radius:40px;box-shadow:inset 0 0 0 1.6px var(--gold-3);transition:background .35s var(--ease),color .3s,box-shadow .35s,transform .35s var(--ease)}
 .header-cta .phone svg{width:17px;height:17px;color:#25D366;transition:color .3s}
+.header-cta .phone .lat{font-family:var(--font-body);font-weight:700;letter-spacing:.01em}
 .header-cta .phone:hover{background:var(--gold-grad);color:#1c1710;box-shadow:inset 0 0 0 1.6px transparent,var(--shadow-sm);transform:translateY(-2px)}
 .header-cta .phone:hover svg{color:#1c1710}
 .header-cta .btn{padding:11px 20px;font-size:.95rem;white-space:nowrap}
@@ -227,8 +228,10 @@ body:not(.js) #doors{display:none}
 .hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center;width:100%}
 .hero-copy{position:relative;z-index:5}
 .hero .eyebrow{margin-bottom:26px;opacity:0;animation:fadeUp .9s var(--ease) .35s forwards}
-.hero h1{margin-bottom:0;font-size:clamp(2rem,4.7vw,3.8rem)}
-.hero h1 .line{display:block;overflow:hidden;white-space:nowrap}
+.hero h1{margin-bottom:0;font-size:clamp(2rem,4.7vw,3.8rem);line-height:1.24}
+/* padding-top (kept visible inside the clip) + negative margin gives the hamza
+   room so the top of أ / بشأنها isn't shaved off, without shifting the layout */
+.hero h1 .line{display:block;overflow:hidden;white-space:nowrap;padding-top:.18em;margin-top:-.18em}
 .hero h1 .line > span{display:block;transform:translateY(110%);transition:transform 1s var(--ease)}
 .doors-open .hero h1 .line > span,.no-doors .hero h1 .line > span{transform:translateY(0)}
 .hero h1 .line:nth-child(2) > span{transition-delay:.1s}
@@ -571,6 +574,7 @@ body:not(.js) #doors{display:none}
 
 /* map placeholder */
 .map-wrap{margin-top:0;border-radius:var(--r-lg);overflow:hidden;border:1px solid var(--line-2);height:340px;position:relative;background:linear-gradient(135deg,var(--beige-3),var(--beige-2))}
+.map-wrap iframe{position:absolute;inset:0;width:100%;height:100%;border:0;display:block}
 .map-wrap .pin{position:absolute;top:50%;left:50%;transform:translate(-50%,-100%);color:var(--gold-3)}
 .map-wrap .pin svg{width:54px;height:54px;filter:drop-shadow(0 10px 14px rgba(24,23,21,.3));animation:floaty 3s ease-in-out infinite}
 .map-wrap .lbl{position:absolute;bottom:20px;left:50%;transform:translateX(-50%);background:var(--white);padding:10px 22px;border-radius:30px;font-family:var(--font-disp);font-weight:600;box-shadow:var(--shadow-sm);font-size:.92rem;white-space:nowrap}
